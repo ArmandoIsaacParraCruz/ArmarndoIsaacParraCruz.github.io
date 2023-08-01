@@ -78,8 +78,8 @@ main p {
 }
 
 .text-main-container{
-    padding: 1%;
     text-align: justify;
+    padding: 1%;
 }
 
 .portafolio-container{
@@ -158,7 +158,7 @@ th, td {
     }
 
     .text-main-container{
-        padding: 5%;
+        margin-right: 5%;
     }
 
     .portafolio-container{
