@@ -1,0 +1,204 @@
+/* General styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Roboto:ital,wght@0,500;0,900;1,500&display=swap");
+
+body {
+    font-family: 'Trocchi', "Asap", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #00ff88 0%, rgba(2, 6, 238, 0.774) 100%);
+    background-size: 200% 200%;  
+    height: 100%;
+    width: 100%;
+    animation: background 3s ease infinite;
+}
+
+
+@keyframes background { 
+  0% {
+    background-position: 0% 50%;
+  }
+  
+  50% {
+    background-position: 100% 50%;
+  }
+  
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+/* Header styles */
+.header-container {
+    display: inline-flex;
+    flex-direction: row; /* The image will appear to the left of the text */
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-shadow: 1px 1px 1px #10e6e6,
+             1px 2px 1px #108baa,
+             1px 3px 1px #0eb6cc,
+             1px 4px 1px rgb(34, 191, 202),
+             1px 5px 1px #0af8f8,
+             1px 6px 1px #2a87d3,
+             1px 10px 5px rgba(16, 16, 16, 0.5),
+             1px 15px 10px rgba(16, 16, 16, 0.4),
+             1px 20px 30px rgba(16, 16, 16, 0.3),
+             1px 25px 50px rgba(16, 16, 16, 0.2);
+}
+
+h2, h3{
+    font-weight: 600;
+    color: #020202;
+    text-shadow: 0% 0% 1% #025a56, 0px 0px 10px #881ff1, 0px 0px 10px #3d1564,
+    0px 0px 20px #b393d3;
+}
+
+
+
+.my-photo {
+    width: 15%;
+    height: auto;
+    border-radius: 1%;
+    object-fit: cover;
+}
+
+.text-head-container{
+    text-align: justify;
+    padding: 1%;
+}
+
+
+main p {
+    line-height: 1.6;
+}
+
+.text-main-container{
+    padding: 1%;
+    text-align: justify;
+}
+
+.portafolio-container{
+    padding: 1%;
+    text-align: justify;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1%;
+}
+
+th, td {
+    text-align: center;
+    padding: 1%;
+}
+
+/* Responsive table styles */
+.responsive-table td {
+    padding: 10px;
+}
+
+/* Image Project styles */
+.image_project img {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    border-radius: 75%;
+}
+
+.image_project{
+    position: relative;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+.image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.image_project:hover .image-description {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+
+/* Media query for screen size <= 768px (adjust the breakpoint as needed) */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items:center; /* Center items horizontally */
+    }
+
+    .text-head-container{
+        padding: 5%;
+    }
+
+    .my-photo {
+        width: 30%;
+        height: auto; /* This will maintain the aspect ratio of the image */
+    }
+
+    .text-main-container{
+        padding: 5%;
+    }
+
+    .portafolio-container{
+        padding: 5%;
+    }
+
+    .responsive-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .image_project img {
+        width: 50%;
+        height: auto; /* This will maintain the aspect ratio of the image */
+    }
+}
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0; /* Add some padding for better appearance */
+}
+
+footer img {
+    display: inline-block;
+    padding: 1%;
+    width: 30px; /* Adjust the width as needed */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    margin: 1px; /* Add some space between images */
+}
+
+.section {
+    border-top: 2px solid #ddd; /* Línea en la parte superior de cada sección */
+    padding: 0%; /* Añade espacio entre las secciones */
+}
+
